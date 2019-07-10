@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Buckground img
+
+.top-section {
+  background: linear-gradient(
+    49deg,
+    rgb(19, 168, 158) 0%,
+    rgb(76, 113, 156) 40%,
+    rgb(100, 51, 146) 100%
+  );
+}
+
+// Main Container
+
+.flex-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 75px 0 85px;
+}
+
+// Inline-block for blocks
+
+.right-block,
+.left-block {
+  display: inline-block;
+}
+
+// Left Block Content
+
+.left-block .main-line {
+  max-width: 531px;
+  color: #ffffff;
+  font-family: $font-Roboto;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 0 38px;
+}
+
+.left-block .second-line {
+  max-width: 539px;
+  font-family: $font-Roboto;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0 0 38px;
+}
+
+.sold-controls {
+  display: flex;
+  justify-content: space-between;
+  max-width: 530px;
+  margin-bottom: 10px;
+}
+.sold-controls div {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  width: 59px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.availiable-index {
+  margin-right: 11%;
+}
+
+.index-title {
+  max-width: 38px;
+  color: #ffffff;
+  font-family: $font-Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.index-title-right {
+  padding-left: 20%;
+}
+
+.index-value {
+  max-width: 92px;
+  color: #ffffff;
+  font-family: $font-Roboto;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+// Info-Date Line 
+
+.scale-graph {
+  max-width: 555px;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 170px;
+}
+
+.range-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 28px;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.range-controls .scale {
+  flex: 0 0 100%;
+  height: 6px;
+  background-color: #ccc;
+}
+
+.range-controls .bar {
+  height: 6px;
+  background-color: #f8eb58;
+}
+
+.range-toggle {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: #f8eb58;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle-start {
+  left: 11.5%;
+}
+
+.range-toggle-today {
+  left: 75%;
+}
+
+.date-controls {
+  display: flex;
+  justify-content: space-between;
+  max-width: 72%;
+  margin-left: 45px;
+}
+
+.date-controls div {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  width: 59px;
+  height: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+// Social Public
+
+.socialpublic-list {
+  list-style: none;
+  display: flex;
+  width: 228px;
+  height: 32px;
+}
+
+.socialpublic-item {
+  cursor: pointer;
+  display: inline-block;
+  background-color: transparent;
+  width: 25%;
+}
+
+.socialpublic-item a {
+  width: 32px;
+  height: 32px;
+}
+
+.facebook-icon {
+  background-image: url(../images/icon-facebook.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+}
+.instagram-icon {
+  background-image: url(../images/icon-instagram.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.twitter-icon {
+  background-image: url(../images/icon-twitter.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.telegram-icon {
+  background-image: url(../images/icon-telegram.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+}
+
+// Right Block
+
+.flex-container > .right-block {
+  background: linear-gradient(
+    to right,
+    rgba(61, 123, 150, 0.99) 0%,
+    rgba(78, 91, 147, 0.1) 50%,
+    rgba(96, 60, 144, 0.99) 100%
+  );
+  padding: 0 0 44px;
+}
+
+// Right Block content
+
+.right-block .main-line {
+  text-align: center;
+  color: #ffffff;
+  font-family: $font-Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 26px;
+  margin-bottom: 27px;
+}
+
+.right-block .second-line {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: $font-Roboto;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+// Clock for Right Block
+
+#clockdiv {
+  font-family: $font-Roboto;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  margin: 0px 24px 0px 24px;
+}
+
+#clockdiv > div {
+  margin: 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  width: 88px;
+  height: 88px;
+  background-color: #f6f6f6;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.smalltext {
+  font-family: $font-Roboto;
+
+  padding-top: 5px;
+  font-size: 16px;
+  margin-bottom: 23px;
+}
+
+.clockdiv-value {
+  width: 40px;
+  height: 25px;
+  color: #000000;
+  font-family: $font-Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 24px 24px;
+}
+
+// Right Block content
+
+.third-line {
+  color: #ffffff;
+  font-family: $font-Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.fouth-line-block {
+  margin: 0 156px 29px 130px;
+  text-align: center;
+  align-items: center;
+}
+
+.fouth-line-left {
+  display: inline-block;
+  max-width: 121px;
+  max-height: 23px;
+  color: #ffffff;
+  font-family: $font-Roboto;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.fouth-line-image {
+  display: inline-block;
+  line-height: normal;
+  max-width: 28px;
+  max-height: 46px;
+  margin: 0 6px 0 7px;
+  vertical-align: -70%;
+}
+
+.fouth-line-right {
+  display: inline-block;
+  max-width: 43px;
+  max-height: 17px;
+  color: #ffffff;
+  font-family: $font-Roboto;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.button-contribute {
+  background-color: #ffe633;
+  box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.06);
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  text-align: middle;
+  line-height: 55px;
+  width: 234px;
+  height: 62px;
+  border-radius: 25px;
+  margin: 0 auto;
+  text-align: center;
+  color: #000000;
+  font-family: $font-Roboto;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+  .flex-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 75px 0 20px 0;
+  }
+
+  .left-block {
+    padding: 0 10% 20px 10%;
+  }
+
+  .right-block {
+    padding: 0 10% 10px 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .left-block {
+    margin-right: 78px;
+  }
+}
+@media (max-width: 767px) {
+  #clockdiv > div {
+    margin: 0 auto;
+    border-radius: 3px;
+    display: inline-block;
+    width: 40%;
+  }
+
+  .fouth-line-block {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 29px;
+  }
+}
+
+@media (max-width: 479px) {
+  .left-block .main-line {
+    font-size: 30px;
+    text-align: center;
+  }
+  .left-block .second-line {
+    font-size: 15px;
+    text-align: center;
+  }
+  .index-title,
+  .index-value,
+  .start-date,
+  .today-date {
+    font-size: 13px;
+  }
+  .right-block .main-line {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .right-block .second-line {
+    font-size: 15px;
+    text-align: center;
+  }
+  .right-block .third-line {
+    font-size: 15px;
+  }
+}

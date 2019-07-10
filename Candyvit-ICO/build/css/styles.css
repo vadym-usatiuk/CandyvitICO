@@ -1394,10 +1394,6 @@ li {
     margin-bottom: 30px;
   }
 
-  .benefit__list:nth-last-of-type(-n+1) {
-    margin-bottom: 0;
-  }
-
   .whitepeper__block {
     max-width: 400px;
   }
